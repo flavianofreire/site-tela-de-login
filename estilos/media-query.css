@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    display: flex;
+    width: 70vw;
+    padding: 0;
+  }
+
+  #foto-principal {
+    border-radius: 20px 0 0 20px;
+    width: 250px;
+    height: 100%;
+  }
+
+  #tela-query {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 850px;
+    padding: 0;
+  }
+
+  #foto-principal {
+    border-radius: 0 20px 20px 0;
+    width: 300px;
+    height: 100%;
+  }
+}

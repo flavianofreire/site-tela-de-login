@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-query.css" />
+    <title>Tela de login</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <img src="login.jpg" alt="" id="foto-principal" />
+      </article>
+
+      <div id="tela-query">
+        <article id="texto">
+          <h1>Login</h1>
+          <p>
+            Seja bem-vindo(a) novamente. Faça login para acessar sua conta e
+            poder fazer as configurações no seu ambiente.
+          </p>
+        </article>
+        <form action="cadastro.php" method="get" autocomplete="on">
+          <div class="icone-input">
+            <label for="email">
+              <img src="user.png" alt="" />
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" Seu E-mail"
+              required
+            />
+          </div>
+
+          <div class="icone-input">
+            <label for="senha">
+              <img src="passworld.png" alt="" />
+            </label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              minlength="8"
+              placeholder=" Sua Senha"
+              required
+            />
+          </div>
+
+          <div class="icone-input">
+            <input type="submit" value="Entrar" class="input-hover" />
+          </div>
+
+          <div class="icone-input">
+            <input type="button" value="Esqueci a senha" class="input-hover" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
